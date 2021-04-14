@@ -77,37 +77,35 @@ header {
 /* Hero Style Start */
   .hero {
       background-image: url("../images/hero-bg.jpeg");
-      height: 600px;
       background-size: cover;
       background-position: center;
-      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
   }
+
   .hero-cta {
-    color: #fce138;
-    float: left;
+    width: 35%;
+    margin: 3.5%;
+    color: #fff;
     text-align: right;
-    margin: 0 300px 0 30px;
-    padding: 0 50px;
+    font-size: 18px;
+    line-height: 1.3;
   }
 
   .hero-cta h2 {
-    font-size: 56px;
+    font-size: 55px;
     font-style:italic;
-    text-shadow: 2px 2px 2px gray;
+    color: #fce138
   }
 
-  .hero-cta p {
-    color: white;
-  }
   .hero-form {
       color: #024e76;
       background-color: #fce138;
       padding: 20px;
-      width: 500px;
       border: solid 3px #024e76;
-      position: absolute;
-      bottom: 120px;
-      right: 140px;
+      width: 40%;
+      margin: 3.5%;
   }
 
   .hero-form h3 {
