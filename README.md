@@ -1,14 +1,16 @@
-# run-buddy
+# Run Buddy, Inc
 
 ## Purpose
-A website that offers fitness training services.
+A website that offers fitness training services. 
 
-## Built with
+## Built With
 * HTML
 * CSS
 
 ## Website
-github.com/kellydhunter1/run-buddy
+https://lernantino.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Kelly Hunter
+
+### ©️2019 Run Buddy, Inc 
