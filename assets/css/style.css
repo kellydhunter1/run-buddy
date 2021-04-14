@@ -143,10 +143,11 @@ header {
   .section-title {
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
     border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px;
+    width: 50%;
   }
   
   .primary-border {
@@ -157,9 +158,6 @@ header {
     border-color: #39a6b2;
   }
 /* Section 1*/
-  .intro {
-    text-align: center;
-  }
 
   .intro p {
     line-height: 1.7;
@@ -167,11 +165,11 @@ header {
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
+    text-align: center;
   }
 
   /* Section 2 */
 .steps {
-text-align: center;
 background-color:#fce138;
 }
 
@@ -197,10 +195,6 @@ background-color:#fce138;
 
 .steps span {
   font-size: 38px;
-}
-
-.trainers {
-  text-align:center;
 }
 
 .trainer {
@@ -248,7 +242,6 @@ background-color:#fce138;
 
 /* REACH OUT STYLES START */
 .contact {
-  text-align: center;
   background: #024e76;
 }
 
@@ -285,5 +278,7 @@ background-color:#fce138;
   .contact-info a {
     color: #fce138;
   }
-  
+  .flex-row {
+    display: flex;
+  }
   /* REACH OUT STYLES END *
