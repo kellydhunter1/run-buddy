@@ -144,10 +144,10 @@ header {
     font-size: 55px;
     color: #024e76;
     border-bottom: 3px solid;
-    padding-bottom: 20px;
     text-align: center;
-    margin: 0 auto 35px;
     width: 50%;
+    padding-bottom: 20px;
+    margin: 0 auto 35px;
   }
   
   .primary-border {
