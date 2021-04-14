@@ -76,7 +76,7 @@ header {
       background-position: center;
       position: relative;
   }
-  .hero-header {
+  .hero-cta {
     color: #fce138;
     float: left;
     text-align: right;
@@ -84,13 +84,13 @@ header {
     padding: 0 50px;
   }
 
-  .hero-header h2 {
+  .hero-cta h2 {
     font-size: 56px;
     font-style:italic;
     text-shadow: 2px 2px 2px gray;
   }
 
-  .hero-header p {
+  .hero-cta p {
     color: white;
   }
   .hero-form {
