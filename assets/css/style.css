@@ -13,10 +13,18 @@ body {
     /* apply styles to <header> */
 header {
     padding: 20px 35px;
+    background-image: url("../images/hero-bg.jpeg");
+    background-size: cover;
+    background-position: center;
     background-color: #39a6b2;
+    background-attachment: fixed;
+    background-position: 80%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
   
   header h1 {
@@ -24,6 +32,7 @@ header {
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
   header a {
@@ -47,6 +56,15 @@ header {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* hover effect for header buttons */
+  header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
   }
 
     /*footer styles*/
@@ -82,6 +100,8 @@ header {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      background-attachment: fixed;
+      background-position: 80%;
   }
 
   .hero-cta {
@@ -96,16 +116,19 @@ header {
   .hero-cta h2 {
     font-size: 55px;
     font-style:italic;
-    color: #fce138
+    color: #fce138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   .hero-form {
       color: #024e76;
-      background-color: #fce138;
+      background-color: rgba(252, 225, 56, 0.8);
       padding: 20px;
       border: solid 3px #024e76;
       width: 40%;
       margin: 3.5%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
   }
 
   .hero-form h3 {
@@ -125,7 +148,15 @@ header {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
   }
+
+  /* Focus effect for form inputs */
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
 
   .hero-form label {
     margin: 0 5px;
@@ -137,7 +168,14 @@ header {
     padding: 10px 20px;
     border: none;
     font-size: 16px;
+    border-radius: 10px;
   }
+
+  /* Hover effect for submit button*/
+  .hero-form button:hover {
+    background-color: #39a6b2;  
+  }
+
   /* Hero Style End */ 
 
   .section-title {
@@ -173,11 +211,14 @@ header {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .step:not(:last-child) {
+    border-bottom: 1px solid #39a6b2;
   }
 
 .steps {
@@ -307,9 +348,16 @@ margin-right: 20px;
     padding: 7px 15px;
     font-size: 16px;
     color: #024e76;
+    background-color: rgba(255,255,255, 0.75);
     width: 100%;
     margin-top: 15px;
     margin-bottom: 5px;
+    border-radius: 10px;
+  }
+/* focus effect for reach out input */
+  .contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
   }
 
   .contact-form button {
@@ -320,6 +368,13 @@ margin-right: 20px;
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 10px;
+  }
+
+  /* Hover effect for contact submit button*/
+  .contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
   }
   
   .contact-info a {
@@ -334,3 +389,125 @@ margin-right: 20px;
     margin: 15px;
   }
   /* REACH OUT STYLES END *
+  /* UTILITIES */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex-row {
+  display: flex;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position:relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-cta, .hero-form {
+    width: 100%;
+  }
+  
+  .hero-cta {
+    text-align: center;
+  }
+
+  .section-title {
+    width: 80%;
+  }
+  
+  .trainer {
+    flex: 0 70%;
+  }
+  
+  .contact-info iframe{
+    flex: 1 100%;
+  }
+}
+
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;  
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+
+@media screen and (max-width: 575px) {
+  .hero-form button {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+
+  .contact-form {
+    order: 3;
+  }
+}
